@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+
+.header{
+  background-color: rgb(194, 30, 86);
+}
+.header h2 {
+    padding:  5px;
+    color: deeppink;
+    text-align: center;
+    letter-spacing: 1em;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header h6 {
+    color: rgb(201, 12, 201);
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-size: 15px;
+    
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('serduszka_background.avif');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack the top and bottom sections vertically */
+  justify-content: space-between; /* Spread out the top and bottom sections */
+  height: 94vh; /* Make the container take the full height of the viewport */
+}
+
+.top, .bottom {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+}
+.box > img {
+  width: 135px;
+  height: 225px;
+
+}
+
+.box {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+ .container {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.yes-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gif-container {
+  display: flex;
+  justify-content: space-evenly; 
+  width: 100%;  
+  align-items: center;
+}
+
+.gif {
+  width: 200px;  
+  height: 150px;  
+}
+
+.left-gif {
+  margin-right: 25px; 
+}
+
+.right-gif {
+  margin-left: 25px;  
+}

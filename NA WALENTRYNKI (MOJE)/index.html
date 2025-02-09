@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocham cię  </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+      const messages = [
+      "Napewno?",
+      "Ale czy jestes pewna?",
+      "Prosze..",
+      "Bede smutny",
+      "NO okej.. przestane pyrać..",
+      "HAAHAHAA zartowalem. Proszeeee zostan",
+      "PROSZEEEE..",
+      "BARDZO PROSZE."
+                      ];
+
+  let messageIndex = 0;
+
+  function handleNoClick() {
+      const noButton = document.querySelector('.no-button');
+      const yesButton = document.querySelector('.yes-button');
+      noButton.textContent = messages[messageIndex];
+      messageIndex = (messageIndex + 1) % messages.length;
+      const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+      yesButton.style.fontSize = `${currentSize * 1.5}px`;
+}
+function handleYesClick() {
+    window.location.href = "tak_index.html";
+}
+</script>
+    <header class="header">
+        <h2>Kocham Cię<i class='bx bxs-heart'></i></h1>
+        <h6><i class='bx bxs-heart'></i>Jesteś moim słodziaczkiem<i class='bx bxs-heart'></i></h6>
+    </header>
+<div class="background">  
+    <main>
+        <div class="container">
+            <div class="top ">
+              <div class="box"><img src="Snapchat-1034970482.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1133395373.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1152355866.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1155257056.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1265704856.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1294627302.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-134989515.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1363244916.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1744511005.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1750976015.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-1922061109.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-2012880580.jpg" alt=""></div>
+              <div class="box"><img src="Snapchat-2050790806.jpg" alt=""></div>
+            </div> 
+        <div class="buttons">
+          <button class="yes-button" onclick="handleYesClick()">TAKK</button>
+          <button class="no-button" onclick="handleNoClick()">NIE..</button>
+        </div>
+        <!-- <div class="gif-container">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="left-gif" class="gif left-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="right-gif" class="gif right-gif">
+      </div> -->
+            <div class="bottom">
+            <div class="box"><img src="Snapchat-2118658290.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-297953105.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-374771901.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-543913452.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-548683718.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-643180852.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-67008547.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-746305943.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-754908508.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-885548085.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-908618267.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-923682082.jpg" alt=""></div>
+            <div class="box"><img src="Snapchat-935660360.jpg" alt=""></div>
+            </div>
+          </div>
+  
+    </main>
+    <footer class="footer"> 
+    </footer>
+</div>
+</body>
+</html>
